@@ -1,8 +1,9 @@
 import { Router } from 'react-typesafe-routes';
-import { HomePage } from './pages';
 
-export const router = Router(route => ({
+const Noop: React.FC = () => null;
+
+export const router = Router((route) => ({
 	home: route('/', {
-		component: HomePage,
+		component: Noop,
 	}),
 }));
