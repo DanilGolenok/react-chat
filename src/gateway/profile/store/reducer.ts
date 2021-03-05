@@ -4,15 +4,19 @@ import { ProfileActionType } from './actions';
 import * as types from './types';
 
 interface ProfileState {
-	profile: ProfileEntity;
+	currentProfile: ProfileEntity | null;
 }
 
-export const profileReducer = (state: ProfileState, action: ProfileActionType): ProfileState => {
+const initialState: ProfileState = {
+	currentProfile: null,
+};
+
+export const profileReducer = (state: ProfileState = initialState, action: ProfileActionType): ProfileState => {
 	switch (action.type) {
 		case types.SET_CURRENT_USER:
 			return {
 				...state,
-				profile: action.payload,
+				currentProfile: action.payload,
 			};
 
 		default:
