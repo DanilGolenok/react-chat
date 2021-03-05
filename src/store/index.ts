@@ -1,4 +1,4 @@
-import { rootReducer } from './reducers/root-reducer';
+import { StateType } from './reducers/root-reducer';
 
-export type AppState = ReturnType<typeof rootReducer>;
+export type AppState = StateType;
 export { StoreProvider } from './providers/StoreProvider';

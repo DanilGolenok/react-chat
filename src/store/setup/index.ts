@@ -5,4 +5,4 @@ import { persistStore } from 'redux-persist';
 import { rootReducer } from '../reducers/root-reducer';
 
 export const store = createStore(rootReducer, {}, middleware);
-export const persistor = persistStore(store);
+export const persistor = persistStore(store as any);
