@@ -4,7 +4,7 @@ export function* infiniteIterator<TData>(data: TData[]) {
 	let idx = 0;
 
 	while (true) {
-		if (idx === data.length - 1) {
+		if (idx >= data.length - 1) {
 			idx = 0;
 		}
 
