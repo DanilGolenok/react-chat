@@ -3,7 +3,7 @@ import React from 'react';
 import { AppHeader } from '../../components/AppHeader';
 import { AppNavBar } from '../../components/AppNavBar';
 
-import 'AppLayout.scss';
+import './AppLayout.scss';
 
 export const AppLayout: React.FC = ({ children }) => (
 	<div className="app-layout">
