@@ -1,10 +1,14 @@
-type EventListener<T> = (data: T) => void;
+type EventListener<T = undefined> = T extends undefined ? (data?: T) => void : (data: T) => void;
 
 export class EventEmitter<TData extends any> {
 	private readonly _listeners: EventListener<TData>[];
 
 	constructor() {
 		this._listeners = [];
+	}
+
+	get listeners() {
+		return this._listeners;
 	}
 
 	emit(data: TData) {
