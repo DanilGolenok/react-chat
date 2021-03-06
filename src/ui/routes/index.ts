@@ -1,1 +1,1 @@
-export { PublicRoutes } from './components/PublicRoutes';
+export { Routes } from './@core/Routes';
