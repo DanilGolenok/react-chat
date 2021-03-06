@@ -21,15 +21,15 @@ In order for the ui module to have access to data, the root component of the mod
 
 Each module should be isolated from external changes and have its own folder structure. For example
 
-@core/
-components/
-hooks/
-pages/
-views/
-sections/
-context/
-providers/
-index.ts
+@core/ <br>
+components/ <br>
+hooks/ <br>
+pages/ <br>
+views/ <br>
+sections/ <br>
+context/ <br>
+providers/ <br>
+index.ts <br>
 
 The **@core/** folder contains the root component for the module to work. A module can provide multiple root components
 **index.ts** exports root components from a module
