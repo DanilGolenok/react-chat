@@ -1,0 +1,46 @@
+@import 'ui/assets/theme/palette';
+
+.link-container {
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+
+.navigation-link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 8px 40px;
+	transition: background-color 150ms linear;
+
+	&:hover {
+		background-color: rgba($color: $secondary-contrast, $alpha: 0.2);
+	}
+
+	&__icon {
+		width: 24px;
+		height: auto;
+		margin-right: 16px;
+
+		* {
+			fill: $primary;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		font-weight: 600;
+		color: $primary;
+	}
+
+	&--active::before {
+		content: '';
+		display: block;
+		height: 100%;
+		width: 4px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $primary;
+	}
+}
