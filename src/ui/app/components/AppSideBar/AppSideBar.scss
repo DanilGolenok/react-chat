@@ -1,0 +1,21 @@
+.side-bar {
+	$spacing: 64px;
+
+	&__header {
+		margin-bottom: $spacing;
+		text-align: left;
+	}
+
+	&__brand {
+		font-size: 32px;
+		font-weight: 800;
+		text-align: center;
+	}
+
+	&__profile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: $spacing;
+	}
+}
