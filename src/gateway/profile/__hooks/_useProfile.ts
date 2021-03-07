@@ -3,12 +3,13 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { useMount, useDefine } from 'ui/@core/hooks';
 import { profilesMock } from '../__mock/profiles.mock';
+import { profileMapper } from '../mapper/profile.mapper';
 
 import { ProfileEntity } from 'domain/entities/profile.entity';
 import { ProfileSubstituterService } from 'domain/services/profile-substituter.service';
 
-import * as actions from '../store/actions';
-import * as selectors from '../store/selectors';
+import * as actions from '../state/actions';
+import * as selectors from '../state/selectors';
 
 export const _useProfile = () => {
 	const _profileService = useDefine(() => new ProfileSubstituterService(profilesMock));
@@ -17,7 +18,8 @@ export const _useProfile = () => {
 	const profile = useSelector(selectors.getCurrentProfile);
 
 	const changeProfileHandler = useCallback((newProfile: ProfileEntity) => {
-		dispatch(actions.setCurrentProfile(newProfile));
+		const _profile = profileMapper(newProfile);
+		dispatch(actions.setCurrentProfile(_profile));
 	}, []);
 
 	useMount(() => {

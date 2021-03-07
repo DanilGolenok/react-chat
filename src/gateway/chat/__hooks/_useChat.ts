@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ProfileEntity } from 'domain/entities/profile.entity';
 import { ChatMessageEntity } from 'domain/entities/chat-message.entity';
 
-import * as actions from '../store/actions';
-import * as selectors from '../store/selectors';
+import * as actions from '../state/actions';
+import * as selectors from '../state/selectors';
 
 export const _useChat = () => {
 	const dispatch = useDispatch();
