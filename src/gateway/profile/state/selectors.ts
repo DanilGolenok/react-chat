@@ -1,3 +1,3 @@
 import { AppState } from 'store';
 
-export const getCurrentProfile = (state: AppState) => state.profile.currentProfile
+export const getCurrentProfile = (state: AppState) => state.profile.currentProfile;
