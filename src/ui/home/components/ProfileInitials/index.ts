@@ -1,0 +1,1 @@
+export { ProfileInitials } from './ProfileInitials';
