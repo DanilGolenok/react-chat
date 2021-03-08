@@ -1,0 +1,10 @@
+.app-header {
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	& > *:not(:last-child) {
+		margin-right: 16px;
+	}
+}

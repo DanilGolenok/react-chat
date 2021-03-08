@@ -6,10 +6,23 @@
 	padding: 48px;
 	display: grid;
 	grid-template-columns: 280px 1fr;
-	background-color: $secondary-light;
+	gap: 32px;
+	background-color: $secondary;
 
 	&__sidebar {
 		width: 100%;
 		height: 100vh;
+	}
+
+	&__main {
+		width: 100%;
+		display: grid;
+		grid-template-rows: 64px 1fr;
+	}
+
+	&__content {
+		border-radius: 32px;
+		padding: 48px;
+		background-color: #fff;
 	}
 }
