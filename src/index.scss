@@ -9,7 +9,10 @@
 		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	appearance: none;
+	border: none;
 	color: $primary;
+	outline: none;
 
 	&:any-link {
 		text-decoration: none;
