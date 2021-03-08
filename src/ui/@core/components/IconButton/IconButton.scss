@@ -1,0 +1,27 @@
+.app-icon-button {
+	$size: 44px;
+
+	background-color: #fff;
+	border-radius: 50%;
+	height: $size;
+	width: $size;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 150ms;
+
+	&:hover {
+		transform: translateY(-2px);
+	}
+
+	&:active {
+		transform: translateY(-1px);
+	}
+
+	&__icon {
+		display: block;
+		height: 20px;
+		width: auto;
+	}
+}
