@@ -1,17 +1,16 @@
-import { Profile } from '../models/profile';
+import { ProfileEntity } from 'domain/entities/profile.entity';
 import { ProfileActionType } from './actions';
 
 import { profilesMock } from '../__mock/profiles.mock';
-import { profileMapper } from '../mapper/profile.mapper';
 
 import * as types from './types';
 
 interface ProfileState {
-	currentProfile: Profile | null;
+	currentProfile: ProfileEntity | null;
 }
 
 const initialState: ProfileState = {
-	currentProfile: profileMapper(profilesMock[profilesMock.length - 1]),
+	currentProfile: profilesMock[profilesMock.length - 1],
 };
 
 export const profileReducer = (state: ProfileState = initialState, action: ProfileActionType): ProfileState => {

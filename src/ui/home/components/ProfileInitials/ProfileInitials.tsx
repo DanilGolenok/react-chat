@@ -1,12 +1,12 @@
 import React from 'react';
+import { ProfileEntity } from 'domain/entities/profile.entity';
 
-import { Profile } from 'gateway/profile/models/profile';
 import { Avatar } from 'ui/@core/components/Avatar';
 
 import './ProfileInitials.scss';
 
 type Props = {
-	profile: Profile;
+	profile: ProfileEntity;
 };
 
 export const ProfileInitials: React.FC<Props> = ({ profile }) => (
