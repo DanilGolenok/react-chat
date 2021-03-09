@@ -1,0 +1,23 @@
+@import 'ui/assets/theme/palette';
+
+.chat {
+	height: 100%;
+
+	&__container {
+		height: calc(100% - 32px - 42px);
+		max-width: 820px;
+		margin: 42px auto 0;
+		display: grid;
+		grid-template-rows: 1fr 40px;
+		gap: 16px;
+	}
+
+	&__messages {
+		background-color: $secondary-contrast;
+	}
+
+	&__input {
+		display: flex;
+		align-items: center;
+	}
+}
