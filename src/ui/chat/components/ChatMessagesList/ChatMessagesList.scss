@@ -5,6 +5,7 @@
 	overflow-y: auto;
 	border-radius: 19px;
 	border: 1px solid rgba($color: $primary-light, $alpha: 0.2);
+	padding: 32px;
 
 	& > *:not(:last-child) {
 		margin-bottom: 24px;
