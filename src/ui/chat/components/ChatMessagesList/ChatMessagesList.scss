@@ -3,6 +3,8 @@
 .chat-messages-list {
 	height: 100%;
 	overflow-y: auto;
+	border-radius: 19px;
+	border: 1px solid rgba($color: $primary-light, $alpha: 0.2);
 
 	& > *:not(:last-child) {
 		margin-bottom: 24px;
