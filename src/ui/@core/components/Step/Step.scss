@@ -1,0 +1,60 @@
+@import 'ui/assets/theme/palette';
+
+.steps {
+	$spacing: 32px;
+	--bullet-size: 20px;
+
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+
+	&:not(:last-child) {
+		margin-bottom: $spacing;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: calc((var(--bullet-size) / 2) - 2px);
+			top: calc(var(--bullet-size) + 4px);
+			height: calc(100% + 8px);
+			width: 4px;
+			border-radius: 2px;
+			background-color: rgba($color: $primary, $alpha: 0.3);
+		}
+	}
+
+	&__bullet {
+		transform: translateY(2px);
+		height: var(--bullet-size);
+		width: var(--bullet-size);
+		border: 3px solid $primary;
+		border-radius: 50%;
+		margin-right: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__inner-bullet {
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+		background-color: $primary;
+		border-radius: 50%;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+		font-weight: 600;
+		color: rgba($color: $primary, $alpha: 0.6);
+	}
+}
