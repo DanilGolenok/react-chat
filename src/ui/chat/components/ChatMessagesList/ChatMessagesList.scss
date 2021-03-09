@@ -1,0 +1,10 @@
+@import 'ui/assets/theme/palette';
+
+.chat-messages-list {
+	height: 100%;
+	overflow-y: auto;
+
+	& > *:not(:last-child) {
+		margin-bottom: 24px;
+	}
+}

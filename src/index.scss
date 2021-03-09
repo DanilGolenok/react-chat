@@ -17,6 +17,22 @@
 	&:any-link {
 		text-decoration: none;
 	}
+
+	/* width */
+	&::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: $primary;
+		border-radius: 3px;
+	}
 }
 
 input {
