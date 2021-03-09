@@ -2,7 +2,7 @@ import React from 'react';
 import { useChat } from 'gateway/chat/hooks/useChat';
 
 import { PageTitle } from 'ui/@core/components/PageTitle';
-import { InputMessage } from 'ui/chat/components/InputMessage';
+import { SendMessageForm } from 'ui/chat/forms/SendMessageForm';
 
 import './ChatPage.scss';
 
@@ -16,7 +16,7 @@ export const ChatPage: React.FC = () => {
 			<div className="chat__container">
 				<div className="chat__messages"></div>
 				<div className="chat__input">
-					<InputMessage />
+					<SendMessageForm />
 				</div>
 			</div>
 		</div>
