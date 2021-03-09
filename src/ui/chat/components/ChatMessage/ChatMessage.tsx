@@ -13,7 +13,7 @@ export const ChatMessage: React.FC<Props> = ({ chatMessage }) => (
 	<div className="chat-message">
 		<div className="chat-message__header">
 			<div className="chat-message__avatar">
-				<Avatar size={42} />
+				<Avatar size={42} hash={chatMessage.sender.uid} letter={chatMessage.sender.username} fontSize={18} />
 			</div>
 			<div className="chat-message__info">
 				<span className="chat-message__sender">{chatMessage.sender.username}</span>

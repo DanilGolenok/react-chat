@@ -12,7 +12,7 @@ type Props = {
 export const ProfileInitials: React.FC<Props> = ({ profile }) => (
 	<div className="profile">
 		<div className="profile__avatar">
-			<Avatar size={128} />
+			<Avatar size={128} hash={profile.uid} letter={profile.username} fontSize={52} />
 		</div>
 		<div className="profile__initials">
 			<p className="profile__name">{profile.username}</p>
