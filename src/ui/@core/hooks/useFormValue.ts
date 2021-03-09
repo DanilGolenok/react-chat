@@ -8,5 +8,7 @@ export const useFormValue = () => {
 		setValue(_value);
 	};
 
-	return { value, onChange };
+	const refresh = () => setValue('');
+
+	return { value, refresh, onChange };
 };
