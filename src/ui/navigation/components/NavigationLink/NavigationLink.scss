@@ -12,9 +12,10 @@
 	align-items: center;
 	padding: 8px 40px;
 	transition: background-color 150ms linear;
+	border-radius: 8px;
 
 	&:hover {
-		background-color: rgba($color: $secondary-contrast, $alpha: 0.2);
+		background-color: rgba($color: $secondary-contrast, $alpha: 0.1);
 	}
 
 	&__icon {
